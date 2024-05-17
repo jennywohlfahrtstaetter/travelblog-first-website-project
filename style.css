@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+
+/* temporary styles */
+/* * {
+    border: 2px solid lightgrey;
+    padding: 2rem;
+}
+
+html,
+body {
+    border: none;
+} */
+/* end of temporary styles */
+
+/* typography */
+* {
+    color: rgb(10, 10, 10);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    padding: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: Merriweather;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { margin-bottom: 2rem;}
+
+h1 { 
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+p:last-child { margin-bottom: 0;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+a:hover {
+    color:rgba(252, 167, 56, 0.896);
+}
+
+
+/* footer styles */
+footer a {
+    display: block;
+}
+
+/* utility classes */
+.center {text-align: center;}
+.right {text-align: right;}
+
+.uppercase {text-transform: uppercase;}
+.capitalized {text-transform: capitalize;}
+
+.padded5 {padding: 5%;}
+.padded4 {padding: 4%;}
+.padded3 {padding: 3%;}
+.padded1 {padding: 1%;}
+.padded-t {padding-top: 2rem;}
+.padded-header {padding-left: 22rem;}
+.padded-nav { padding-bottom: 0.4rem;}
+.padded-b { padding-bottom: 2rem;}
+.margin-b {margin-bottom: 2rem;}
+
+.bg-image {
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+}
+
+.copyright {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* buttons */
+.readmore { display: grid;}
+
+.button {
+    border: 2px solid rgba(252, 167, 56, 0.896);
+    padding: 2%;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.button:hover {border: 2px solid black;}
+
+/* shapes and lines */
+.teardrop-shape {
+    border-radius: 20rem;
+    border-bottom-right-radius: 0;
+}
+
+.bowl-shape {
+    border-bottom-right-radius: 85%;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.line {
+    border-top: 1px solid black;
+}
