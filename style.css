@@ -21,7 +21,7 @@ body {
 } */
 /* end of temporary styles */
 
-/* typography */
+/* -------------- typography -------------- */
 * {
     color: rgb(10, 10, 10);
 }
@@ -81,12 +81,7 @@ a:hover {
 }
 
 
-/* footer styles */
-footer a {
-    display: block;
-}
-
-/* utility classes */
+/*  -------------- utility classes  -------------- */
 .center {text-align: center;}
 .right {text-align: right;}
 
@@ -98,10 +93,11 @@ footer a {
 .padded3 {padding: 3%;}
 .padded1 {padding: 1%;}
 .padded-t {padding-top: 2rem;}
-.padded-header {padding-left: 22rem;}
+.padded-l {padding-left: 1rem;}
 .padded-nav { padding-bottom: 0.4rem;}
 .padded-b { padding-bottom: 2rem;}
 .margin-b {margin-bottom: 2rem;}
+.margin-icon {margin: 20%;}
 
 .bg-image {
     background-color: antiquewhite;
@@ -116,7 +112,7 @@ footer a {
     opacity: 0.7;
 }
 
-/* buttons */
+/*  -------------- buttons  -------------- */
 .readmore { display: grid;}
 
 .button {
@@ -128,7 +124,18 @@ footer a {
 
 .button:hover {border: 2px solid black;}
 
-/* shapes and lines */
+.fa-brands {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.fa-brands:hover {
+    color:#fcb04b;
+}
+
+/* --------------  shapes and lines  -------------- */
 .teardrop-shape {
     border-radius: 20rem;
     border-bottom-right-radius: 0;
@@ -141,7 +148,66 @@ footer a {
     border-top-right-radius: 0;
 }
 
+.round-shape {
+    border-radius: 50%;
+}
+
 hr {
     border: none;
     border-bottom: 1px solid black;
 }
+
+/*  -------------- footer styles  -------------- */
+footer a {
+    display: block;
+}
+
+/* -------------------- contact form ----------- */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 2px solid antiquewhite;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: rgba(252, 167, 56, 0.896);
+}
+
+textarea {
+  min-height: 8rem;
+}
+
+form label {
+  margin-top: 0.5rem;
+  display: block;
+  color: rgba(252, 167, 56, 0.896);
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+form button {
+  background-color:rgba(252, 167, 56, 0.896);
+  color: white;
+  border: 2px solid rgba(252, 167, 56, 0.896);
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+} 
+
+form button:hover {
+    background-color: antiquewhite;
+    border: 2px solid rgba(252, 167, 56, 0.896);
+    color: rgba(252, 167, 56, 0.896);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
